@@ -1,0 +1,5 @@
+Student name: Thomas Wagenaar
+Student number: 764294
+Student class: HAINF26VT1A
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
