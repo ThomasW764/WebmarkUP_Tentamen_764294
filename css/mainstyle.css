@@ -1,0 +1,216 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+}
+
+h1{
+    font-family: "Google Sans", bold;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 120%;
+}
+
+h2{
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+}
+
+h3{
+    font-family: "Google Sans", bold;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+
+h4{
+    font-family: "Google Sans", bold;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 130%;
+}
+
+h5{
+    font-family: "Google Sans", bold;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+
+h6{
+    font-family: "Google Sans", bold;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 140%;
+}
+
+p{
+    font-family: "Google Sans", sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.inleiding{
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+}
+
+.button{
+    display: inline-block;
+    color: white;
+    background-color: rgb(3, 120, 166);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: rgb(3, 115, 140);
+}
+
+#main_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: "Google Sans", sans-serif;
+}
+
+#main_header > a > img{
+    display: block;
+    width: 6rem;
+    height: auto;
+}
+
+#mainmenu > ul{
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainmenu a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#mainmenu a:hover{
+    color: aquamarine;
+}
+
+#hero_image{
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    margin: 0;
+    overflow: hidden;
+}
+
+#hero_image > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#introduction{
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    align-items: center;
+    column-gap: 142px;
+    padding-top: 6rem;
+    padding-left: 122px;
+}
+
+#introduction > article{
+    font-family: "Google Sans", sans-serif;
+    width: 720;
+}
+
+#introduction > figure {
+	margin: 0;
+}
+
+#introduction > figure > img {
+	display: block;
+	width: 100%;
+	height: 50rem;
+	object-fit: cover;
+}
+
+#step{
+    display: grid;
+    grid-template-columns: 1fr 720px;
+    align-items: center;
+    column-gap: 142px;
+    margin-top: 8rem;
+    padding-left: 0px;
+    padding-right: 122px;
+    background-color: rgb(242, 191, 145);
+}
+
+#step > article{
+    font-family: "Google Sans", sans-serif;
+    width: 720;
+}
+
+#step > figure {
+	margin: 0;
+}
+
+#step > figure > img {
+	display: block;
+	width: 100%;
+	height: 50rem;
+	object-fit: cover;
+}
+
+#coaches{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 2rem;
+	row-gap: 2rem;
+	padding: 5rem 7.625rem;
+	background-color: #ffffff;
+}
+
+#coaches > .section_header{
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+.coach_card{
+    margin: 0;
+}
+
+.coach_card > figure{
+    position: relative;
+    height: 44rem;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.coach_card > figure > img{
+    display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.coach_card > figure > figcaption{
+    position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 4rem 2rem 3rem;
+	color: #ffffff;
+	background: linear-gradient(transparent,rgba(0, 0, 0, 0.85));
+}
