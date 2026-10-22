@@ -1,6 +1,16 @@
+html,
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 h1{
@@ -114,7 +124,7 @@ a{
 
 #hero_image{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 4rem);
     margin: 0;
     overflow: hidden;
@@ -138,7 +148,7 @@ a{
 
 #introduction > article{
     font-family: "Google Sans", sans-serif;
-    width: 720;
+    width: 720px;
 }
 
 #introduction > figure {
@@ -165,7 +175,7 @@ a{
 
 #step > article{
     font-family: "Google Sans", sans-serif;
-    width: 720;
+    width: 720px;
 }
 
 #step > figure {
@@ -258,4 +268,170 @@ a{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+
+/*----------------------------------Mobiel-------------------------------*/
+
+.menu_toggle,
+.hamburger {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+	}
+
+	p,
+	a {
+		font-size: 1rem;
+	}
+
+    #main_header {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+		padding: 1rem 1.5rem;
+	}
+
+	#main_header > a > img {
+		width: 4.5rem;
+	}
+
+	.hamburger {
+		display: grid;
+		gap: 0.35rem;
+		padding: 0.75rem;
+		cursor: pointer;
+	}
+
+	.hamburger > span {
+		display: block;
+		width: 2rem;
+		height: 0.2rem;
+		background-color: #222222;
+		border-radius: 1rem;
+		transition: transform 0.2s ease;
+	}
+
+	#mainmenu {
+		grid-column: 1 / -1;
+		width: 100%;
+	}
+
+	#mainmenu > ul {
+		display: none;
+		grid-template-columns: 1fr;
+		gap: 0;
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	#mainmenu a {
+		display: block;
+		padding: 1rem;
+	}
+
+	#menu_toggle:checked ~ #mainmenu > ul {
+		display: grid;
+	}
+
+    #hero_image {
+		width: 100%;
+		height: 60vh;
+	}
+
+    #introduction {
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		padding: 0;
+	}
+
+	#introduction > article {
+		width: 100%;
+		padding: 3rem 1.5rem;
+	}
+
+	#introduction > figure {
+		width: 100%;
+	}
+
+	#introduction > figure > img {
+		width: 100%;
+		height: 25rem;
+        display: none;
+	}
+
+    .button {
+		width: 100%;
+		text-align: center;
+	}
+
+    #step {
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+
+	#step > article {
+		width: 100%;
+		padding: 3rem 1.5rem;
+	}
+
+	#step > figure {
+		width: 100%;
+	}
+
+	#step > figure > img {
+		width: 100%;
+		height: 25rem;
+	}
+
+    #coaches {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 3rem 1.5rem;
+	}
+
+	#coaches > .section_header {
+		grid-column: auto;
+	}
+
+	.coach_card {
+		width: 100%;
+	}
+
+	.coach_card > figure {
+		height: 32rem;
+	}
+
+    #site_footer {
+		grid-template-columns: 1fr;
+		width: 100%;
+		padding: 1rem 1.5rem;
+	}
+
+    .footer_social > h4,
+    .footer_column > h4 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+}
+
+* {
+	box-sizing: border-box;
 }
