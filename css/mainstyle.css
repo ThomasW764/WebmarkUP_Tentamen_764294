@@ -2,7 +2,6 @@ html,
 body {
 	width: 100%;
 	margin: 0;
-	overflow-x: hidden;
 }
 
 img {
@@ -39,6 +38,7 @@ h4{
     font-weight: 700;
     font-size: 2rem;
     line-height: 130%;
+	text-transform: uppercase;
 }
 
 h5{
@@ -60,6 +60,9 @@ p{
     font-weight: 100;
     font-size: 1.25rem;
     line-height: 150%;
+	letter-spacing: 0.01;
+    word-spacing: 0.01;
+	text-indent: 0;
 }
 
 a{
@@ -119,7 +122,11 @@ a{
 }
 
 #mainmenu a:hover{
-    color: aquamarine;
+    color: rgb(3, 120, 166);
+}
+
+#mainmenu a:active {
+    color: rgb(3, 120, 166);
 }
 
 #hero_image{
@@ -248,10 +255,11 @@ a{
 }
 
 .social_links > li > a > img {
-	display: block;
-	width: 1.5rem;
-	height: 1.5rem;
+	float: left;
+	width: 2rem;
+	height: 2rem;
 	object-fit: contain;
+	margin-right: 1rem;
 }
 
 .footer_social{
@@ -270,6 +278,36 @@ a{
 	list-style: none;
 }
 
+#cookie_message {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: calc(100% - 2rem);
+    padding: 0rem 2rem 0rem 2rem;
+    background-color: white;
+    z-index: 9999;
+	border-style: double;
+	border-color: rgb(3, 95, 130);
+	border-width: 10px;
+}
+
+#cookie_close {
+    position: absolute;
+    opacity: 0;
+}
+
+#cookie_message > label {
+    cursor: pointer;
+    text-decoration: underline;
+	font-family: "Google Sans", sans-serif;
+	display:block;
+	text-align: right;
+	margin-bottom: 1rem;
+}
+
+#cookie_close:checked ~ #cookie_message {
+    display: none;
+}
 
 /*----------------------------------Mobiel-------------------------------*/
 
@@ -322,7 +360,7 @@ a{
 		display: block;
 		width: 2rem;
 		height: 0.2rem;
-		background-color: #222222;
+		background-color: #000000;
 		border-radius: 1rem;
 		transition: transform 0.2s ease;
 	}
@@ -430,8 +468,4 @@ a{
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 }
-}
-
-* {
-	box-sizing: border-box;
 }
