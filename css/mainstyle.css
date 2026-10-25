@@ -484,6 +484,69 @@ a{
 }
 /*----------------------------------END Stappenplan page-------------------------------*/
 
+/*----------------------------------Coach page-------------------------------*/
+
+#coach_overview {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4rem;
+	max-width: 90rem;
+	margin: auto;
+	padding: 5rem 7.625rem;
+}
+
+.coach_page_header {
+	text-align: center;
+}
+
+.coach_page_header > h1 {
+	margin: 0 0 1rem;
+}
+
+.coach_page_header > p {
+	max-width: 45rem;
+	margin: auto;
+}
+
+.coach_profile {
+	display: grid;
+	grid-template-columns: 20rem minmax(0, 1fr);
+	align-items: start;
+	gap: 2rem;
+}
+
+.coach_profile > figure {
+	margin: 0;
+}
+
+.coach_profile > figure > img {
+	display: block;
+	width: 100%;
+	height: 28rem;
+	object-fit: cover;
+}
+
+.coach_information h2 {
+	margin: 0 0 0rem;
+	font-size: 2.5rem;
+}
+
+.certificate_title {
+	margin: 0;
+	font-size: 1.75rem;
+	line-height: 1.2;
+}
+
+.certificate_list {
+	margin: 0 0 1.5rem;
+	font-size: 1.35rem;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+
+/*----------------------------------END Coach page-------------------------------*/
+
 /*----------------------------------Mobiel-------------------------------*/
 
 .menu_toggle,
@@ -741,4 +804,39 @@ a{
 	}
 
 /*----------------------------------END Stappenplan page mobile-------------------------------*/
+
+/*----------------------------------Coach page mobile-------------------------------*/
+
+@media screen and (max-width: 768px) {
+	#coach_overview {
+		gap: 3rem;
+		padding: 3rem 1.5rem;
+	}
+
+	.coach_profile {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.coach_profile > figure > img {
+		width: 100%;
+		height: 30rem;
+	}
+
+	.coach_information h2 {
+		font-size: 2rem;
+	}
+
+	.certificate_title,
+	.certificate_list {
+		font-size: 1.25rem;
+	}
+
+	.coach_information > .button {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/*----------------------------------END Coach page mobile-------------------------------*/
 }
