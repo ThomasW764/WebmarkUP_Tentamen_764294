@@ -810,7 +810,7 @@ a{
 @media screen and (max-width: 768px) {
 	#coach_overview {
 		gap: 3rem;
-		padding: 3rem 1.5rem;
+		padding: 0rem 2rem;
 	}
 
 	.coach_profile {
