@@ -3,25 +3,129 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Thomas Wagenaar">
-		<title>Mijn eerste Website voor Web Mark-up</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Grow Step</title>
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="img/Icon_32x32.png">
+		<meta name="description" content="Grow Step helpt je persoonlijke doelen te bereiken met een haalbaar stappenplan, persoonlijke coaching en een betrokken community.">
+        <meta name="keywords" content="persoonlijke groei, coaching, stappenplan, doelen, community">
 	</head>
-
 	<body>
-		<header>
-			<h1>Contact Page</h1>
-            <h1>Hallo</h1>
+		<input type="checkbox" id="cookie_close">
+		<aside id="cookie_message" aria-label="Cookiemelding">
+			<p>Wat is cookie? Kan je dat eten?</p>
+			<label for="cookie_close">Sluiten</label>
+		</aside>
+		<header id="main_header">
+				<a href="index.html">
+					<img src="img/Logo.png" alt="Logo van Grow Step" title="Ga naar de homepage">
+				</a>
+				<input type="checkbox" id="menu_toggle" class="menu_toggle">
+				<label for="menu_toggle" class="hamburger" aria-label="Open of sluit het menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<nav id="mainmenu">
+					<ul>
+						<li><a href="inspiratie.html">Inspiratie</a></li>
+						<li><a href="stappenplan.html">Stappenplan</a></li>
+						<li><a href="personal_coaching.html">Personal Coaching</a></li>
+						<li><a href="community.html">Community</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 		</header>
 
-		<main>
-			<section>
-				<h2>Welkom</h2>
-				<p>Dit is Thomas HAHAHAHA</p>
+		<main id="contact_page">
+			<section id="contact_section">
+				<header>
+					<h1>Contact ons</h1>
+					<p>Heb je een vraag? Vul het formulier in en we nemen contact met je op.</p>
+				</header>
+				<form id="contact_form" action="#" method="post">
+					<fieldset class="contact_details">
+						<legend class="visually_hidden">Persoonlijke gegevens</legend>
+						<label for="first_name">Naam</label>
+						<input id="first_name" name="name" type="text" placeholder="Naam" required>
+
+						<label for="last_name">Achternaam</label>
+						<input id="last_name" name="name" type="text" placeholder="Achternaam" required>
+						
+						<label for="contact_name">Telefoon nummer</label>
+						<input id="telefoon_number" name="phone" type="tel" placeholder="Telefoon nummer" required>
+
+						<label for="contact_name">Mobiel (optioneel)</label>
+						<input id="mobiel" name="mobiel" type="tel" placeholder="Telefoon nummer (optioneel)" required>
+
+						<label for="E-mail">E-mail</label>
+						<input id="E-mail" name="E-mail" type="email" placeholder="E-mail" required>
+					</fieldset>	
+
+					<fieldset class="contact_message">
+						<legend class="visually_hidden">Uw bericht</legend>
+
+						<label for="contact_subject">Onderwerp</label>
+						<input id="contact_subject" name="subject" type="text" placeholder="Onderwerp" required>
+						<label for="contact_text">Bericht</label>
+						<textarea id="contact_text" name="message" placeholder="Wat wilt u aan ons vertellen of vragen?" required></textarea>
+					</fieldset>
+				<input class="contact_submit" type="submit" value="Verzenden">
+				</form>
 			</section>
 		</main>
+		<footer id="site_footer">
+		<aside class="footer_social">
+			<h4>Volg ons</h4>
+			<ul class="social_links">
+				<li>
+					<a href="#" aria-label="Instagram">
+						<img src="img/Instagram_Logo.png" alt="Instagram" title="Bekijk onze Instagram">
+					</a>
+				</li>
 
-		<footer>
-			<p>&copy; 2026 Thomas Wagenaar</p>
-		</footer>
+				<li>
+					<a href="#" aria-label="Facebook">
+						<img src="img/Facebook_logo.png" alt="Facebook" title="Bekijk onze Facebook">
+					</a>
+				</li>
+
+				<li>
+					<a href="#" aria-label="LinkedIn">
+						<img src="img/Youtube_logo.png" alt="Youtube" title="Bekijk onze Youtube">
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+		<section class="footer_column">
+			<h4>Over ons</h4>
+			<ul>
+				<li><a href="inspiratie.html">Inspiratie</a></li>
+				<li><a href="stappenplan.html">Stappenplan</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</section>
+
+		<section class="footer_column">
+			<h4>Coaches</h4>
+			<ul>
+				<li><a href="personal_coaching.html">Onze coaches</a></li>
+				<li><a href="contact.html">Afspraak maken</a></li>
+			</ul>
+		</section>
+
+		<section class="footer_column">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="contact.html">Contactformulier</a></li>
+				<a href="mailto:info@growstep.nl">E-mail: info@growstep.nl</a>
+			</ul>
+		</section>
+		<p>&copy; 2026 Grow Step Thomas Wagenaar</p>
+	</footer>
 	</body>
 </html>

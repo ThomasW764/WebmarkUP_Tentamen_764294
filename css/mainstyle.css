@@ -544,15 +544,107 @@ a{
 	line-height: 1.2;
 }
 
-
-/*----------------------------------END Coach page-------------------------------*/
-
-/*----------------------------------Mobiel-------------------------------*/
-
 .menu_toggle,
 .hamburger {
 	display: none;
 }
+
+/*----------------------------------END Coach page-------------------------------*/
+
+/*----------------------------------Contact page-------------------------------*/
+
+#contact_page {
+	padding: 5rem 7.625rem;
+	background-color: #ffffff;
+}
+
+#contact_section {
+	max-width: 80rem;
+	margin: auto;
+}
+
+#contact_section > header {
+	margin-bottom: 2rem;
+}
+
+#contact_section > header > h1 {
+	margin: 0 0 0.75rem;
+}
+
+#contact_section > header > p {
+	max-width: 45rem;
+	margin: 0;
+}
+
+#contact_form {
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	column-gap: 5rem;
+	row-gap: 2rem;
+	padding: 4rem;
+	background-color: rgb(242, 191, 145);
+}
+
+#contact_form > fieldset {
+	display: grid;
+	align-content: start;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.contact_details {
+	grid-template-columns: 1fr;
+}
+
+.contact_message {
+	grid-template-columns: 1fr;
+}
+
+#contact_form label {
+	margin-bottom: 0.5rem;
+	font-family: "Google Sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+#contact_form input,
+#contact_form textarea {
+	width: 100%;
+	margin-bottom: 1.5rem;
+	padding: 1rem 1.25rem;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 0.125rem;
+	background-color: #ffffff;
+	font-family: "Google Sans", sans-serif;
+	font-size: 1rem;
+}
+
+#contact_form textarea {
+	min-height: 24.5rem;
+	resize: vertical;
+}
+
+#contact_form > .contact_submit {
+	grid-column: 2;
+	min-width: 12rem;
+	margin: 0;
+	justify-self: end;
+	width: 3rem;
+	padding: 0.875rem 2rem;
+	border-color: rgb(3, 120, 166);
+	background-color: rgb(3, 120, 166);
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#contact_form > .contact_submit:hover {
+	background-color: rgb(3, 95, 125);
+}
+/*----------------------------------END Contact page-------------------------------*/
+
+/*----------------------------------Mobiel-------------------------------*/
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -806,11 +898,9 @@ a{
 /*----------------------------------END Stappenplan page mobile-------------------------------*/
 
 /*----------------------------------Coach page mobile-------------------------------*/
-
-@media screen and (max-width: 768px) {
 	#coach_overview {
 		gap: 3rem;
-		padding: 0rem 2rem;
+		padding: 0rem 2rem 5rem;
 	}
 
 	.coach_profile {
@@ -836,7 +926,33 @@ a{
 		width: 100%;
 		text-align: center;
 	}
-}
-
 /*----------------------------------END Coach page mobile-------------------------------*/
+
+/*----------------------------------Contact page mobile-------------------------------*/
+
+	#contact_page {
+		padding: 3rem 1.5rem;
+	}
+
+	#contact_form {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		padding: 2rem 1.5rem;
+	}
+
+	.contact_details,
+	.contact_message,
+	#contact_form > .contact_submit {
+		grid-column: 1;
+	}
+
+	#contact_form textarea {
+		min-height: 14rem;
+	}
+
+	#contact_form > .contact_submit {
+		width: 100%;
+		justify-self: stretch;
+	}
+/*----------------------------------END Contact page mobile-------------------------------*/
 }
