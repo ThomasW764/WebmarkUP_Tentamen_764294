@@ -1,5 +1,5 @@
 Student name: Thomas Wagenaar
 Student number: 764294
 Student class: HAINF26VT1A
-GitHub Repository: https://github.com/ThomasW764/WebmarkUP_Tentamen_764294.git
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/ThomasW764/WebmarkUP_Tentamen_764294
+GitHub Pages URL: https://thomasw764.github.io/WebmarkUP_Tentamen_764294/

@@ -3,29 +3,177 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Thomas Wagenaar">
-		<title>Mijn eerste Website voor Web Mark-up</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Grow Step</title>
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="img/Icon_32x32.png">
+		<meta name="description" content="Grow Step helpt je persoonlijke doelen te bereiken met een haalbaar stappenplan, persoonlijke coaching en een betrokken community.">
+        <meta name="keywords" content="persoonlijke groei, coaching, stappenplan, doelen, community">
 	</head>
-
 	<body>
-		<header>
-			<h1>Community Page</h1>
-		</header>
+		<input type="checkbox" id="cookie_close">
+		<aside id="cookie_message" aria-label="Cookiemelding">
+			<p>Wat is cookie? Kan je dat eten?</p>
+			<label for="cookie_close">Sluiten</label>
+		</aside>
+		<header id="main_header">
+			<a href="index.html">
+				<img src="img/Logo.png" alt="Logo van Grow Step" title="Ga naar de homepage">
+			</a>
+			<input type="checkbox" id="menu_toggle" class="menu_toggle">
+			<label for="menu_toggle" class="hamburger" aria-label="Open of sluit het menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<nav id="mainmenu">
+				<ul>
+					<li><a href="inspiratie.html">Inspiratie</a></li>
+					<li><a href="stappenplan.html">Stappenplan</a></li>
+					<li><a href="personal_coaching.html">Personal Coaching</a></li>
+					<li><a href="community.html">Community</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+	</header>
+		<figure id="hero_image">
+			<picture>
+				<source
+					media="(max-width: 768px)"
+					srcset="img/Inspiratie_Hero_2.jpg"
+				>
+				<img
+					src="img/Inspiratie_hero.jpg"
+					alt="Lachende vrouw met blauwe lucht op de achtergrond"
+					title="Ontdek wat je allemaal kunt bereiken"
+				>
+			</picture>
+		</figure>
 
-		<main>
-			<section>
-				<h2>Welkom</h2>
-				<p>Dit is Thomas HAHAHAHA</p>
-				<p>TEST</p>
+		<section id="introduction">
+			<article>
+				<h2>Samen bereiken we jouw doelen.</h2>
+				<p class="inleiding">Wil je iets veranderen, maar blijf je het uitstellen? Misschien voelt je doel te groot of 
+					weet je niet waar je moet beginnen. Je hoeft niet alles tegelijk te doen. Wij helpen je om een eerste, 
+					haalbare stap te vinden.</p>
+				<p>Wil je iets veranderen in je leven, maar weet je niet waar je moet beginnen? Misschien wil je een nieuwe 
+					vaardigheid leren, meer zelfvertrouwen opbouwen of een andere richting kiezen in je werk. Je weet wat je wilt, 
+					maar die eerste stap kan lastig zijn.
+					Je hoeft niet meteen alles te veranderen. Met een persoonlijk stappenplan maak je jouw doelen kleiner 
+					en overzichtelijker. Houd bij wat je hebt bereikt en gebruik AI om je planning beter af te stemmen op jouw 
+					tijd en mogelijkheden.
+					Heb je extra steun nodig? Een persoonlijke coach denkt met je mee en in de community kun je ervaringen delen met anderen. 
+					Zo ontdek je wat voor jou werkt en groei je op jouw eigen tempo. Elke kleine stap telt.</p>
+				<a class="button" href="inspiratie.html">Lees meer over onze aanpak</a>
+			</article>
+
+			<figure>
+				<img src="img/Vrouw_liggen.jpg" alt="Omschrijving van foto" title="Titel van de afbeelding">
+			</figure>
+		</section>
+
+		<section id="community_activities">
+			<article class="activity_card">
+				<figure>
+					<img src="img/Activiteit_1.jpg" alt="Mensen praten met elkaar tijdens een bijeenkomst" title="Communitybijeenkomst">
+					<figcaption class="visually_hidden">
+						Communityleden delen ervaringen tijdens een bijeenkomst
+					</figcaption>
+				</figure>
+
+				<h2>Groepsbijeenkomst</h2>
+				<p>
+					Deel je ervaringen en bespreek jouw doelen met mensen die aan hun eigen persoonlijke groei werken.
+				</p>
+
+				<a class="button" href="contact.html">Meer informatie</a>
+			</article>
+
+			<article class="activity_card">
+				<figure>
+					<img src="img/Activiteit_2.jpg" alt="Groep mensen eet samen" title="Samen eten met de community">
+					<figcaption class="visually_hidden">
+						Communityleden leren elkaar kennen tijdens een gezamenlijke maaltijd
+					</figcaption>
+				</figure>
+
+				<h2>Community avond</h2>
+				<p>
+					Ontmoet andere deelnemers in een ontspannen omgeving en ontdek hoe zij aan hun doelen werken.
+				</p>
+
+				<a class="button" href="contact.html">Meer informatie</a>
+			</article>
+			
+			<article class="activity_card">
+				<figure>
+					<img src="img/Activiteit_3.jpg" alt="Mensen voeren samen een gesprek" title="Communitybijeenkomst">
+					<figcaption class="visually_hidden">
+						Communityleden voeren samen een gesprek
+					</figcaption>
+				</figure>
+
+				<h2>Groepsbijeenkomst</h2>
+				<p>
+					Bespreek uitdagingen, stel vragen en krijg nieuwe ideeën van andere deelnemers en begeleiders.
+				</p>
+
+				<a class="button" href="contact.html">Meer informatie</a>
+			</article>
+		</section>
+
+		<footer id="site_footer">
+			<aside class="footer_social">
+				<h4>Volg ons</h4>
+				<ul class="social_links">
+					<li>
+						<a href="#" aria-label="Instagram">
+							<img src="img/Instagram_Logo.png" alt="Instagram" title="Bekijk onze Instagram">
+						</a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="Facebook">
+							<img src="img/Facebook_logo.png" alt="Facebook" title="Bekijk onze Facebook">
+						</a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="LinkedIn">
+							<img src="img/Youtube_logo.png" alt="Youtube" title="Bekijk onze Youtube">
+						</a>
+					</li>
+				</ul>
+			</aside>
+
+			<section class="footer_column">
+				<h4>Over ons</h4>
+				<ul>
+					<li><a href="inspiratie.html">Inspiratie</a></li>
+					<li><a href="stappenplan.html">Stappenplan</a></li>
+					<li><a href="community.html">Community</a></li>
+				</ul>
 			</section>
 
-			<section>
-				<h3>Nog een TEST</h3>
+			<section class="footer_column">
+				<h4>Coaches</h4>
+				<ul>
+					<li><a href="personal_coaching.html">Onze coaches</a></li>
+					<li><a href="contact.html">Afspraak maken</a></li>
+				</ul>
 			</section>
-		</main>
 
-		<footer>
-			<p>&copy; 2026 Thomas Wagenaar</p>
+			<section class="footer_column">
+				<h4>Contact</h4>
+				<ul>
+					<li><a href="contact.html">Contactformulier</a></li>
+					<a href="mailto:info@growstep.nl">E-mail: info@growstep.nl</a>
+				</ul>
+			</section>
+			<p>&copy; 2026 Grow Step Thomas Wagenaar</p>
 		</footer>
 	</body>
 </html>

@@ -644,6 +644,60 @@ a{
 }
 /*----------------------------------END Contact page-------------------------------*/
 
+/*----------------------------------Community page-------------------------------*/
+
+#community_activities {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+	padding: 13rem 7.625rem 15rem;
+	background: linear-gradient(
+		to bottom,
+		rgb(242, 191, 145) 0%,
+		rgb(242, 191, 145) 45%,
+		#ffffff 45%,
+		#ffffff 100%
+	);
+}
+
+.activity_card {
+	min-width: 0;
+	text-align: center;
+}
+
+.activity_card > figure {
+	height: 27rem;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 1.5rem;
+}
+
+.activity_card > figure > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.activity_card > h2 {
+	margin: 1.5rem 0 0.75rem;
+	font-size: 2rem;
+}
+
+.activity_card > p {
+	max-width: 25rem;
+	min-height: 7rem;
+	margin: 0 auto 1.5rem;
+}
+
+.activity_card > .button {
+	width: auto;
+}
+
+
+
+/*----------------------------------END Community page-------------------------------*/
+
 /*----------------------------------Mobiel-------------------------------*/
 
 @media screen and (max-width: 768px) {
@@ -955,4 +1009,41 @@ a{
 		justify-self: stretch;
 	}
 /*----------------------------------END Contact page mobile-------------------------------*/
+
+/*----------------------------------Community page mobile-------------------------------*/
+
+	#community_intro {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 3rem 1.5rem;
+	}
+
+	#community_intro > figure {
+		height: 28rem;
+	}
+
+	#community_activities {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+		padding: 3rem 1.5rem;
+		background: rgb(242, 191, 145);
+	}
+
+	.activity_card {
+		padding-bottom: 2rem;
+	}
+
+	.activity_card > figure {
+		height: 25rem;
+	}
+
+	.activity_card > p {
+		min-height: 0;
+	}
+
+	.activity_card > .button {
+		width: 100%;
+	}
+
+/*----------------------------------END Community page mobile-------------------------------*/
 }
