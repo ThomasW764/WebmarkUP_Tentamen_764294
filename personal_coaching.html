@@ -24,7 +24,8 @@
 				<img src="img/Logo.png" alt="Logo van Grow Step" title="Ga naar de homepage">
 			</a>
 			<input type="checkbox" id="menu_toggle" class="menu_toggle">
-			<label for="menu_toggle" class="hamburger" aria-label="Open of sluit het menu">
+			<label for="menu_toggle" class="hamburger">
+    		<span class="visually_hidden">Open of sluit het menu</span>
 				<span></span>
 				<span></span>
 				<span></span>
@@ -40,132 +41,100 @@
 			</nav>
 	</header>
 		<figure id="hero_image">
-			<picture>
-				<source
-					media="(max-width: 768px)"
-					srcset="img/Inspiratie_Hero_2.jpg"
-				>
+			<picture class="image_desktop">
 				<img
-					src="img/Personal_Coach.jpg"
-					alt="Lachende vrouw met blauwe lucht op de achtergrond"
-					title="Ontdek wat je allemaal kunt bereiken"
+					src="img/Hero_PersonalCoach.jpg"
+					alt="Lachende man in een groene trui met de tekst: Jouw groei, met de juiste begeleiding"
+					title="Jouw groei, met de juiste begeleiding"
+				>
+			</picture>
+			<picture class="image_mobile">
+				<img
+					src="img/PersonalCoach_Vrienden.JPG"
+					alt="Twee mannen staan naast elkaar op een bospad en maken een hart met hun handen"
+					title="Jouw groei, met de juiste begeleiding"
 				>
 			</picture>
 		</figure>
 
 		<section id="introduction">
 			<article>
-				<h2>Samen bereiken we jouw doelen.</h2>
-				<p class="inleiding">Wil je iets veranderen, maar blijf je het uitstellen? Misschien voelt je doel te groot of 
-					weet je niet waar je moet beginnen. Je hoeft niet alles tegelijk te doen. Wij helpen je om een eerste, 
-					haalbare stap te vinden.</p>
-				<p>Wil je iets veranderen in je leven, maar weet je niet waar je moet beginnen? Misschien wil je een nieuwe 
-					vaardigheid leren, meer zelfvertrouwen opbouwen of een andere richting kiezen in je werk. Je weet wat je wilt, 
-					maar die eerste stap kan lastig zijn.
-					Je hoeft niet meteen alles te veranderen. Met een persoonlijk stappenplan maak je jouw doelen kleiner 
-					en overzichtelijker. Houd bij wat je hebt bereikt en gebruik AI om je planning beter af te stemmen op jouw 
-					tijd en mogelijkheden.
-					Heb je extra steun nodig? Een persoonlijke coach denkt met je mee en in de community kun je ervaringen delen met anderen. 
-					Zo ontdek je wat voor jou werkt en groei je op jouw eigen tempo. Elke kleine stap telt.</p>
-				<a class="button" href="inspiratie.html">Lees meer over onze aanpak</a>
+				<h1>Waarom is een begeleiding handig</h1>
+				<p class="inleiding">Soms is het lastig om zelfstandig aan je doelen te blijven werken. Een coach ondersteunt 
+					je tijdens moeilijke momenten en helpt je wanneer je motivatie verliest of ergens vastloopt. Je hoeft niet alles 
+					alleen uit te zoeken.</p>
+
+				<p>Een coach luistert naar je verhaal en denkt met je mee over wat jij nodig hebt. Samen kijken jullie naar je doelen, 
+					de uitdagingen die je tegenkomt en de stappen die je kunt zetten. Door vragen te stellen, helpt een coach je om 
+					zelf tot inzichten en oplossingen te komen. Onze coaches zijn opgeleid om mensen te begeleiden bij hun persoonlijke 
+					ontwikkeling en worden zorgvuldig door ons geselecteerd. Iedereen heeft andere behoeften. Daarom vinden we het 
+					belangrijk dat je een coach kunt kiezen bij wie jij je prettig voelt. Tijdens een kennismakingsgesprek bespreek 
+					je wat je wilt bereiken en waar je hulp bij nodig hebt. Zo ontdek je of de coach bij jou past. Daarna werken 
+					jullie samen aan haalbare stappen. Je coach helpt je om je vooruitgang te herkennen en je aanpak aan te passen 
+					wanneer iets niet werkt. Jij bepaalt je doel en tempo; je coach ondersteunt je onderweg.</p>
 			</article>
 
 			<figure>
-				<img src="img/Vrouw_liggen.jpg" alt="Omschrijving van foto" title="Titel van de afbeelding">
+				<img src="img/PersonalCoach_Vrienden.JPG" 
+				alt="Twee mannen staan naast elkaar op een bospad en maken een hart met hun handen" 
+				title="Samen sta je sterker">
 			</figure>
 		</section>
 
 		<section id="coach_overview">
 			<header class="coach_page_header">
-				<h1>Onze personal coaches</h1>
+				<h2>Onze personal coaches</h2>
 				<p>Vind een coach die past bij jouw doelen en persoonlijke situatie.</p>
 			</header>
 
 			<article class="coach_profile">
 				<figure>
-					<img src="img/Peter.jpg" alt="Personal coach Johan Puding" title="Maak kennis met Johan Puding">
-					<figcaption class="visually_hidden">Portret van personal coach Johan Puding</figcaption>
+					<img src="img/Tommy.jpg" 
+					alt="Personal coach Tommy Brabant" 
+					title="Ontmoet coach Tommy Brabant">
+					<figcaption class="visually_hidden">Portret van personal coach Tommy Brabant</figcaption>
 				</figure>
 				<section class="coach_information">
 					<header>
-						<h2>Johan Puding</h2>
-						<p class="certificate_title">Certificaten:</p>
-						<p class="certificate_list">
-							Fitness, psychologie, chiropractie en yoga
-						</p>
+						<h3>Tommy Brabant</h3>
+						<p class="certificate_title">Certificaat:</p>
+						<p class="certificate_list">Loopbaancoaching en persoonlijke ontwikkeling</p>
 					</header>
-					<p>
-						Johan helpt mensen om meer vertrouwen op te bouwen en
-						gezonde gewoontes te ontwikkelen. Samen maak je een haalbaar
-						plan dat aansluit bij jouw persoonlijke doelen.
-					</p>
-
+					<p>Tommy helpt je om te ontdekken welke richting bij jou past. Samen kijk je naar jouw interesses, sterke kanten en persoonlijke doelen. Zo bepaal je een haalbare volgende stap in je loopbaan en persoonlijke ontwikkeling.</p>
 					<a class="button" href="contact.html">Meer informatie</a>
 				</section>
 			</article>
 			<article class="coach_profile">
 				<figure>
-					<img src="img/Peter.jpg" alt="Personal coach Johan Puding" title="Maak kennis met Johan Puding">
-					<figcaption class="visually_hidden">Portret van personal coach Johan Puding</figcaption>
+					<img src="img/Thomas.jpeg" 
+					alt="Personal coach Thomas Depp" 
+					title="Ontmoet coach Thomas Depp">
+					<figcaption class="visually_hidden">Portret van personal coach Thomas Depp</figcaption>
 				</figure>
 				<section class="coach_information">
 					<header>
-						<h2>Johan Puding</h2>
-						<p class="certificate_title">Certificaten:</p>
-						<p class="certificate_list">
-							Fitness, psychologie, chiropractie en yoga
-						</p>
+						<h3>Thomas Depp</h3>
+						<p class="certificate_title">Certificaat:</p>
+						<p class="certificate_list">Personal coaching en mindfulness</p>
 					</header>
-					<p>
-						Johan helpt mensen om meer vertrouwen op te bouwen en
-						gezonde gewoontes te ontwikkelen. Samen maak je een haalbaar
-						plan dat aansluit bij jouw persoonlijke doelen.
-					</p>
-
+					<p>Thomas helpt je om overzicht te krijgen en bewuster met je doelen om te gaan. Samen maak je ruimte voor rust en verdeel je jouw doelen in kleine, haalbare stappen. Je werkt aan een aanpak die bij jouw dagelijks leven past.</p>
 					<a class="button" href="contact.html">Meer informatie</a>
 				</section>
 			</article>
 			<article class="coach_profile">
 				<figure>
-					<img src="img/Peter.jpg" alt="Personal coach Johan Puding" title="Maak kennis met Johan Puding">
-					<figcaption class="visually_hidden">Portret van personal coach Johan Puding</figcaption>
+					<img src="img/Thomas_BoldMan.jpeg" 
+					alt="Personal coach Jappy Boldman" 
+					title="Ontmoet coach Jappy Boldman">
+					<figcaption class="visually_hidden">Portret van personal coach Jappy Boldman</figcaption>
 				</figure>
 				<section class="coach_information">
 					<header>
-						<h2>Johan Puding</h2>
-						<p class="certificate_title">Certificaten:</p>
-						<p class="certificate_list">
-							Fitness, psychologie, chiropractie en yoga
-						</p>
+						<h3>Jappy Boldman</h3>
+						<p class="certificate_title">Certificaat:</p>
+						<p class="certificate_list">Fitnesstrainer en leefstijlcoaching</p>
 					</header>
-					<p>
-						Johan helpt mensen om meer vertrouwen op te bouwen en
-						gezonde gewoontes te ontwikkelen. Samen maak je een haalbaar
-						plan dat aansluit bij jouw persoonlijke doelen.
-					</p>
-
-					<a class="button" href="contact.html">Meer informatie</a>
-				</section>
-			</article>
-			<article class="coach_profile">
-				<figure>
-					<img src="img/Peter.jpg" alt="Personal coach Johan Puding" title="Maak kennis met Johan Puding">
-					<figcaption class="visually_hidden">Portret van personal coach Johan Puding</figcaption>
-				</figure>
-				<section class="coach_information">
-					<header>
-						<h2>Johan Puding</h2>
-						<p class="certificate_title">Certificaten:</p>
-						<p class="certificate_list">
-							Fitness, psychologie, chiropractie en yoga
-						</p>
-					</header>
-					<p>
-						Johan helpt mensen om meer vertrouwen op te bouwen en
-						gezonde gewoontes te ontwikkelen. Samen maak je een haalbaar
-						plan dat aansluit bij jouw persoonlijke doelen.
-					</p>
-
+					<p>Jappy helpt je om meer te bewegen en gezonde gewoontes op te bouwen. Samen kijk je welke veranderingen passen bij jouw situatie. Met kleine, haalbare stappen werk je aan een leefstijl die je kunt volhouden.</p>
 					<a class="button" href="contact.html">Meer informatie</a>
 				</section>
 			</article>
@@ -173,7 +142,7 @@
 
 		<footer id="site_footer">
 		<aside class="footer_social">
-			<h4>Volg ons</h4>
+			<h2>Volg ons</h2>
 			<ul class="social_links">
 				<li>
 					<a href="#" aria-label="Instagram">
@@ -196,7 +165,7 @@
 		</aside>
 
 		<section class="footer_column">
-			<h4>Over ons</h4>
+			<h2>Over ons</h2>
 			<ul>
 				<li><a href="inspiratie.html">Inspiratie</a></li>
 				<li><a href="stappenplan.html">Stappenplan</a></li>
@@ -205,7 +174,7 @@
 		</section>
 
 		<section class="footer_column">
-			<h4>Coaches</h4>
+			<h2>Coaches</h2>
 			<ul>
 				<li><a href="personal_coaching.html">Onze coaches</a></li>
 				<li><a href="contact.html">Afspraak maken</a></li>
@@ -213,7 +182,7 @@
 		</section>
 
 		<section class="footer_column">
-			<h4>Contact</h4>
+			<h2>Contact</h2>
 			<ul>
 				<li><a href="contact.html">Contactformulier</a></li>
 				<li><a href="mailto:info@growstep.nl">E-mail: info@growstep.nl</a></li>

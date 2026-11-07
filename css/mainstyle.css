@@ -13,7 +13,7 @@ img {
 }
 
 h1{
-    font-family: "Google Sans", bold;
+    font-family: "Google Sans", sans-serif;
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 120%;
@@ -27,14 +27,14 @@ h2{
 }
 
 h3{
-    font-family: "Google Sans", bold;
+    font-family: "Google Sans", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 120%;
 }
 
 h4{
-    font-family: "Google Sans", bold;
+    font-family: "Google Sans", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     line-height: 130%;
@@ -42,14 +42,14 @@ h4{
 }
 
 h5{
-    font-family: "Google Sans", bold;
+    font-family: "Google Sans", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 140%;
 }
 
 h6{
-    font-family: "Google Sans", bold;
+    font-family: "Google Sans", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 140%;
@@ -199,7 +199,7 @@ a{
 	margin: 0;
 }
 
-#step > figure > img {
+#step > figure img {
 	display: block;
 	width: 100%;
 	height: 50rem;
@@ -368,7 +368,7 @@ a{
 	min-width: 0;
 }
 
-.book_card h2 {
+.book_card h3 {
 	margin: 0 0 0.25rem;
 	font-size: 1.35rem;
 	line-height: 1.1;
@@ -394,6 +394,7 @@ a{
 #goal_planner {
 	min-height: calc(100vh - 7rem);
 	padding: 4rem 6.4rem 4rem;
+	border-top: 7rem solid white;
 	background-color: rgb(242, 191, 145);
 }
 
@@ -401,7 +402,7 @@ a{
 	text-align: center;
 }
 
-.goal_header > h1 {
+.goal_header > h2 {
 	margin: 0rem;
 }
 
@@ -514,7 +515,7 @@ a{
 	text-align: center;
 }
 
-.coach_page_header > h1 {
+.coach_page_header > h2 {
 	margin: 0 0 1rem;
 }
 
@@ -541,7 +542,7 @@ a{
 	object-fit: cover;
 }
 
-.coach_information h2 {
+.coach_information h3 {
 	margin: 0 0 0rem;
 	font-size: 2.5rem;
 }
@@ -666,6 +667,7 @@ a{
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 2rem;
 	padding: 13rem 7.625rem 15rem;
+	border-top: 7rem solid white;
 	background: linear-gradient(
 		to bottom,
 		rgb(242, 191, 145) 0%,
@@ -837,7 +839,7 @@ a{
 		width: 100%;
 	}
 
-	#step > figure > img {
+	#step > figure img {
 		width: 100%;
 		height: 25rem;
 	}
@@ -866,8 +868,8 @@ a{
 		padding: 1rem 1.5rem;
 	}
 
-    .footer_social > h4,
-    .footer_column > h4 {
+    .footer_social > h2,
+    .footer_column > h2 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	}
@@ -910,7 +912,7 @@ a{
 		width: 100%;
 	}
 
-	.book_card h2 {
+	.book_card h3 {
 		font-size: 1.25rem;
 	}
 
@@ -986,7 +988,7 @@ a{
 		height: 30rem;
 	}
 
-	.coach_information h2 {
+	.coach_information h3 {
 		font-size: 2rem;
 	}
 
@@ -1065,4 +1067,45 @@ a{
 	}
 
 /*----------------------------------END Community page mobile-------------------------------*/
+}
+
+/* Geef elke schermvariant een eigen afbeelding en alt-tekst. */
+#hero_image > picture.image_mobile,
+#step > figure > picture.image_mobile {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	#hero_image > picture.image_desktop,
+	#step > figure > picture.image_desktop {
+		display: none;
+	}
+
+	#hero_image > picture.image_mobile,
+	#step > figure > picture.image_mobile {
+		display: block;
+	}
+}
+
+/* Behoud de opmaak bij de aangepaste kopniveaus. */
+#site_footer h2 {
+	font-size: 2rem;
+	line-height: 130%;
+	text-transform: uppercase;
+}
+
+.goal_header > h2,
+.coach_page_header > h2 {
+	font-size: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	#site_footer h2 {
+		font-size: 1.25rem;
+	}
+
+	.goal_header > h2,
+	.coach_page_header > h2 {
+		font-size: 2.5rem;
+	}
 }

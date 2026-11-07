@@ -24,7 +24,8 @@
 				<img src="img/Logo.png" alt="Logo van Grow Step" title="Ga naar de homepage">
 			</a>
 			<input type="checkbox" id="menu_toggle" class="menu_toggle">
-			<label for="menu_toggle" class="hamburger" aria-label="Open of sluit het menu">
+			<label for="menu_toggle" class="hamburger">
+    		<span class="visually_hidden">Open of sluit het menu</span>
 				<span></span>
 				<span></span>
 				<span></span>
@@ -40,15 +41,18 @@
 			</nav>
 	</header>
 		<figure id="hero_image">
-			<picture>
-				<source
-					media="(max-width: 768px)"
-					srcset="img/Inspiratie_Hero_2.jpg"
-				>
+			<picture class="image_desktop">
 				<img
 					src="img/Inspiratie_hero.jpg"
-					alt="Lachende vrouw met blauwe lucht op de achtergrond"
-					title="Ontdek wat je allemaal kunt bereiken"
+					alt="Lachende vrouw buiten in de zon"
+					title="Ontdek hoe jij stappen vooruit kunt zetten"
+				>
+			</picture>
+			<picture class="image_mobile">
+				<img
+					src="img/Inspiratie_UitzichKijken.JPG"
+					alt="Man met een pet kijkt vanaf een berg naar het landschap"
+					title="Ontdek hoe jij stappen vooruit kunt zetten"
 				>
 			</picture>
 		</figure>
@@ -70,13 +74,24 @@
 			</article>
 
 			<figure>
-				<img src="img/Inspiratie_ManZit.jpg" alt="Man zit in het donker" title="Sad Boy">
+				<img src="img/Inspiratie_ManZit.jpg" 
+				alt="Man met een pet zit buiten op een rots in de schemering" 
+				title="Een moment voor jezelf">
 			</figure>
 		</section>
 
 		<section id="step">
 			<figure>
-				<img src="img/Inspiratie_UitzichKijken.JPG" alt="Man kijkt naar het mooie uitzicht" title="Inspiratie zoeken">
+				<picture class="image_desktop">
+				<img src="img/Inspiratie_UitzichKijken.JPG" 
+					alt="Man met een pet kijkt vanaf een berg naar het landschap" 
+					title="Stilstaan bij het uitzicht">
+			</picture>
+			<picture class="image_mobile">
+				<img src="img/Inspiratie_ManZit.jpg" 
+					alt="Man met een pet zit buiten op een rots in de schemering" 
+					title="Stilstaan bij het uitzicht">
+			</picture>
 			</figure>
 			<article>
 				<h2>Inspiratie voor jouw persoonlijke groei</h2>
@@ -118,48 +133,60 @@
 			</header>
 			<article class="book_card">
 				<figure>
-					<img src="img/Book_7_Habits.jpg" alt="Boekcover van The 7 Habits of Highly Effective People" title="The 7 Habits of Highly Effective People">
+					<img src="img/Book_7_Habits.jpg" 
+					alt="Boekomslag van The 7 Habits of Highly Effective People van Stephen R. Covey" 
+					title="The 7 Habits of Highly Effective People">
 					<figcaption>
-						<h2>The 7 Habits of Highly Effective People</h2>
+						<h3>The 7 Habits of Highly Effective People</h3>
 						<p class="book_author">Stephen R. Covey</p>
-						<p class="book_rating" aria-label="5 van 5 sterren">
-							&#9733; &#9733; &#9733; &#9733; &#9733;
+						<p class="book_rating">
+							<span aria-hidden="true">★★★★★</span>
+							<span class="visually_hidden">5 van 5 sterren</span>
 						</p>
 					</figcaption>
 				</figure>
 			</article>
 			<article class="book_card">
 				<figure>
-					<img src="img/Outliers.jpg" alt="Boekcover van Outliers The story of success" title="Outliers The story of success">
+					<img src="img/Outliers.jpg" 
+					alt="Boekomslag van Outliers: The Story of Success van Malcolm Gladwell" 
+					title="Outliers: The Story of Success">
 					<figcaption>
-						<h2>Outliers: The story of success</h2>
+						<h3>Outliers: The story of success</h3>
 						<p class="book_author">Malcolm Gladwell</p>
-						<p class="book_rating" aria-label="5 van 5 sterren">
-							&#9733; &#9733; &#9733; &#9733; &#9733;
+						<p class="book_rating">
+							<span aria-hidden="true">★★★★★</span>
+							<span class="visually_hidden">5 van 5 sterren</span>
 						</p>
 					</figcaption>
 				</figure>
 			</article>
 			<article class="book_card">
 				<figure>
-					<img src="img/How_To_Win_Friends.jpg" alt="Boekcover van How to win friends & influence people" title="How to win friends & influence people">
+					<img src="img/How_To_Win_Friends.jpg" 
+					alt="Boekomslag van How to Win Friends and Influence People van Dale Carnegie" 
+					title="How to Win Friends and Influence People">
 					<figcaption>
-						<h2>How to win friends & influence people</h2>
+						<h3>How to win friends & influence people</h3>
 						<p class="book_author">Dale Carnegie</p>
-						<p class="book_rating" aria-label="5 van 5 sterren">
-							&#9733; &#9733; &#9733; &#9733; &#9733;
+						<p class="book_rating">
+							<span aria-hidden="true">★★★★★</span>
+							<span class="visually_hidden">5 van 5 sterren</span>
 						</p>
 					</figcaption>
 				</figure>
 			</article>
 			<article class="book_card">
 				<figure>
-					<img src="img/Mindset.jpg" alt="Boekcover van Mindset: The new Psychology of succes" title="Mindset: The new Psychology of succes">
+					<img src="img/Mindset.jpg" 
+					alt="Boekomslag van Mindset: The New Psychology of Success van Carol S. Dweck" 
+					title="Mindset: The New Psychology of Success">
 					<figcaption>
-						<h2>Mindset: The new Psychology of succes</h2>
+						<h3>Mindset: The new Psychology of succes</h3>
 						<p class="book_author">Carol S. Dweck</p>
-						<p class="book_rating" aria-label="5 van 5 sterren">
-							&#9733; &#9733; &#9733; &#9733; &#9733;
+						<p class="book_rating">
+							<span aria-hidden="true">★★★★★</span>
+							<span class="visually_hidden">5 van 5 sterren</span>
 						</p>
 					</figcaption>
 				</figure>
@@ -168,7 +195,7 @@
 
 		<footer id="site_footer">
 		<aside class="footer_social">
-			<h4>Volg ons</h4>
+			<h2>Volg ons</h2>
 			<ul class="social_links">
 				<li>
 					<a href="#" aria-label="Instagram">
@@ -191,7 +218,7 @@
 		</aside>
 
 		<section class="footer_column">
-			<h4>Over ons</h4>
+			<h2>Over ons</h2>
 			<ul>
 				<li><a href="inspiratie.html">Inspiratie</a></li>
 				<li><a href="stappenplan.html">Stappenplan</a></li>
@@ -200,7 +227,7 @@
 		</section>
 
 		<section class="footer_column">
-			<h4>Coaches</h4>
+			<h2>Coaches</h2>
 			<ul>
 				<li><a href="personal_coaching.html">Onze coaches</a></li>
 				<li><a href="contact.html">Afspraak maken</a></li>
@@ -208,7 +235,7 @@
 		</section>
 
 		<section class="footer_column">
-			<h4>Contact</h4>
+			<h2>Contact</h2>
 			<ul>
 				<li><a href="contact.html">Contactformulier</a></li>
 				<li><a href="mailto:info@growstep.nl">E-mail: info@growstep.nl</a></li>
